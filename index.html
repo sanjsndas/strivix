@@ -1,0 +1,1605 @@
+ 
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap" rel="stylesheet" />
+    <title>Strivixpexi - Discover Your Personal Style with Professional Shopper Guidance</title>
+    <meta property="og:title" content="Strivixpexi - Discover Your Personal Style with Professional Shopper Guidance" />
+    <meta property="og:image" content="product-images/personal-styling-main-scene.webp" />
+    
+    <meta property="og:description" content="Choosing what to wear every morning should feel empowering rather than exhausting. Many people look at overflowing wardrobes and still feel like they" />
+    <meta name="description" content="Choosing what to wear every morning should feel empowering rather than exhausting. Many people look at overflowing wardrobes and still feel like they" />
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+     
+    <style>
+      :root{
+        --cb-1: #0f2480;
+        --cb-2: #f97616;
+        --cb-3: #3554d1;
+        --cb-4: #7D74B5;
+        --cb-5: #f9bc16;
+      }
+
+      *{
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body{
+        direction: ltr;
+        font-family: 'Frank Ruhl Libre', sans-serif !important;
+        font-size: clamp(13px, 4vw, 18px);
+        margin: 0;
+        padding: 0px;
+        line-height: 1.5;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      p{
+        padding: 0;
+        margin: 0;
+      }
+
+      p, li{
+        padding: 9px 0;
+        line-height: 1.5;
+      }
+
+      li{
+        margin: 0 9px;
+      }
+
+      a{
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+      }
+
+      img{
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      ul{
+        margin: 0;
+        padding: 0;
+      }
+
+      .container{
+        width: auto;
+        padding-right: 21px;
+        padding-left: 21px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      @media screen and (min-width: 480px) {
+        .container{
+        max-width: 450px;
+        }
+      }
+      @media screen and (min-width: 575px){
+        .container{
+          max-width: 540px;
+        }
+      }
+      @media screen and (min-width: 768px) {
+        .container{
+        max-width: 730px;
+        }
+      }
+      @media screen and (min-width: 992px) {
+        .container{
+          max-width: 960px;
+        }
+      }
+
+      @media screen and (min-width: 1200px){
+        .container{
+          max-width: 1170px;
+          }
+      }
+
+      @media (min-width: 1400px){
+        .container{
+          max-width: 1274px;
+        }
+      }
+
+      .privacy__block{
+        padding: 59px 0;
+        overflow: hidden;
+        width: 100%;
+      }
+
+      .content-privacy{
+        opacity: 0.8;
+        font-size: clamp(16px, 4vw, 18px);
+        color: #060606;
+        text-align: justify;
+      }
+
+      .content-privacy a{
+        transition: 0.3s ease;
+        color: #060606;
+      }
+
+      .content-privacy a:hover{
+        opacity: 0.5;
+      }
+
+      .content-privacy li {
+      list-style: circle;
+      margin: 0 20px;
+      padding:  9px 0;
+    }
+    .content-privacy p {
+      padding:  9px 0;
+    }
+      .header-background{
+        direction: initial;
+        position: relative;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+      }
+
+      .header-background::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100%;
+        background-image: url(uploads/09-2026/minimalist-fashion-background.webp);
+        background-position: center;
+        clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 50% 0%);
+        background-size: cover;
+        filter: brightness(0.9);
+        z-index: -1;
+        animation: backgroundAnimation 10s infinite ease;
+      }
+
+      @keyframes backgroundAnimation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .header{
+        padding: 27px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 42px;
+      }
+
+      .logo-header{
+        gap: 11px;
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+      }
+
+      .logoImg-header img{
+        width: 34px;
+      }
+
+      .logoTitle-header h2{
+        -webkit-text-stroke: 1px var(--cb-4);
+        text-transform: uppercase;
+        transition: 0.3s ease;
+        color: #fff;
+        font-size: clamp(14px, 4vw, 18px);
+        margin: 0;
+      }
+
+      .logoTitle-header h2:hover{
+        opacity: 0.5;
+      }
+
+      .nav-toggle {
+        cursor: pointer;
+        width: 27px;
+        height: 27px;
+        position: relative;
+        z-index: 100;
+        overflow: hidden;
+      }
+
+      .nav-toggle span {
+        width: 15px;
+        height: 3px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        transition: all 0.5s;
+      }
+
+      .nav-toggle span:nth-of-type(2) {
+        top: calc(50% - 7px);
+      }
+
+      .nav-toggle span:nth-of-type(3) {
+        top: calc(50% + 7px);
+      }
+
+      .nav-toggle.active span:nth-of-type(1) {
+        display: none;
+      }
+
+      .nav-toggle.active span:nth-of-type(2) {
+        background-color: #fff;
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(45deg);
+      }
+
+      .nav-toggle.active span:nth-of-type(3) {
+        background-color: #fff;
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(-45deg);
+      }
+
+      .nav-panel {
+        z-index: 99;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.9;
+        padding: 15px 42px;
+        background:  var(--cb-4);
+        transform: translateX(-110%);
+        transition: transform 0.5s;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+
+      .nav-panel.active {
+        transform: translateX(0);
+      }
+
+      .nav-panel nav {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .nav-panel ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 11px;
+        padding: 0;
+      }
+
+      .nav-panel li {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+
+      .nav-link {
+        transition: 0.3s ease;
+        font-weight: bold;
+        text-align: center;
+        font-size: clamp(18px, 4vw, 22px);
+        color: #fff;
+      }
+
+      .nav-link:hover {
+        opacity: 0.5;
+      }
+
+      .header-content{
+        padding: 112px 0;
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        align-items: start;
+        gap: 27px;
+      }
+
+      .header-content h1{
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: clamp(30px, 4vw, 50px);
+        color: var(--cb-4);
+      }
+
+      .header-content h1::first-line {
+        color: var(--cb-5);
+      }
+
+      .header-content p{
+        padding: 0;
+        font-size: clamp(18px, 4vw, 20px);
+        color: #060606;
+      }
+
+      .land-button{
+        border-radius: 27px;
+        border: 1px solid var(--cb-4);
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.5s ease;
+        padding: 11px 15px;
+        font-size: clamp(14px, 4vw, 16px);
+        text-align: center;
+        background-color: transparent;
+        color: var(--cb-4);
+      }
+
+      .land-button:hover{
+        color: #fff;
+        background-color: var(--cb-4);
+      }
+
+      .about{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        gap: 59px;
+        padding: 59px 0;
+      }
+
+      .about-img{
+        flex: 1;
+      }
+
+      .about-img img{
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+      }
+
+      .about-content{
+        padding: 42px 0;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 27px;
+        justify-content: center;
+      }
+
+      .about-content h2{
+        line-height: normal;
+        border-left: 4px solid var(--cb-5);
+        padding-left: 5px;
+        font-weight: bold;
+        font-size: clamp(30px, 4vw, 40px);
+        color: #060606;
+      }
+
+      .about-content p{
+        padding: 0;
+        font-size: clamp(16px, 4vw, 18px);
+        color: #060606;
+      }
+
+      .service{
+        display: flex;
+        flex-direction: column;
+        gap: 59px;
+        padding: 59px 0;
+      }
+
+      .service-title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+      }
+
+      .service-title h2{
+        line-height: normal;
+        border-left: 4px solid var(--cb-5);
+        padding-left: 5px;
+        font-weight: bold;
+        font-size: clamp(30px, 4vw, 40px);
+        color: #060606;
+      }
+
+      .service-title p{
+        padding: 0;
+        font-size: clamp(16px, 4vw, 18px);
+        color: #060606;
+      }
+
+      .service-box{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 27px;
+      }
+
+      .service-card{
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+      }
+
+      .service-card img{
+        width: 100%;
+        height: 219px;
+        object-fit: cover;
+      }
+
+      .service-card h5{
+        font-weight: normal;
+        font-size: clamp(16px, 4vw, 18px);
+        color: #060606;
+      }
+
+      .our-pricing{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 27px;
+        padding: 59px 0;
+      }
+
+      .pricing-box{
+        transition: 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        gap: 27px;
+      }
+
+      .pricing-card{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .pricing-title{
+        background-color: var(--cb-1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 11px;
+        padding: 20px;
+      }
+
+      .pricing-title span{
+        line-height: normal;
+        color: #fff;
+        font-size: clamp(22px, 4vw, 30px);
+      }
+
+      .pricing-title h2{
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: clamp(18px, 4vw, 22px);
+        color: #fff;
+      }
+
+      .pricing-content{
+        transition: 0.3s ease;
+        background-color: var(--cb-5);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+        padding: 27px;
+      }
+
+      .pricing-box:hover .pricing-content{
+        background-color: #EF2143;
+      }
+
+      .pricing-content h5{
+        font-weight: bold;
+        font-size: clamp(30px, 4vw, 50px);
+        color: #fff;
+      }
+
+      .pricing-content span{
+        border-radius: 27px;
+        background-color: #fff;
+        height: 6px;
+        width: 49px;
+      }
+
+      .pricing-list{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .pricing-item{
+        padding: 0;
+        margin: 0;
+        color: #fff;
+        font-size: clamp(16px, 4vw, 18px)
+      }
+
+      .pricing-box .land-button{
+        margin: 0 auto;
+        transition: 0.3s ease !important;
+        color: #fff !important;
+        background-color: var(--cb-4) !important;
+      }
+
+      .pricing-box:hover .land-button{
+        border: 1px solid #EF2143 !important;
+        background-color: #EF2143 !important;
+      }
+
+      .article-content{
+        padding: 59px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 59px;
+        position: relative;
+      }
+
+      .article-content h1{
+        direction: initial;
+        line-height: normal;
+        border-left: 4px solid var(--cb-5);
+        padding-left: 5px;
+        font-weight: bold;
+        font-size: clamp(30px, 4vw, 40px);
+        color: #060606;
+      }
+
+      .article-section{
+        display: flex;
+        flex-direction: row;
+        gap: 42px;
+        position: relative;
+      }
+
+      .article-image{
+        position: relative;
+        flex: 1;
+      }
+
+      .article-image img{
+        object-fit: contain;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        width: 100%;
+        position: sticky;
+        top: 59px;
+      }
+
+      .article-box{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 27px;
+      }
+
+      .article-text {
+        color: #060606;
+        font-size: clamp(16px, 4vw, 18px);
+      }
+
+      .article-text ul {
+        list-style: inside;
+      } 
+      .article-cost {
+        margin-top: 42px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 9px;
+      }
+
+      .article-cost h5{
+        color: var(--cb-4);
+        font-size: clamp(30px, 4vw, 40px);
+        font-weight: bold;
+      }
+
+      .our-history{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        gap: 59px;
+        padding: 59px 0;
+      }
+
+      .history-content{
+        padding: 42px 0;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 27px;
+        justify-content: center;
+      }
+
+      .history-content h2{
+        line-height: normal;
+        border-left: 4px solid var(--cb-5);
+        padding-left: 5px;
+        font-weight: bold;
+        font-size: clamp(30px, 4vw, 40px);
+        color: #060606;
+      }
+
+      .history-content p{
+        padding: 0;
+        font-size: clamp(16px, 4vw, 18px);
+        color: #060606;
+      }
+
+      .history-img-box{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 27px;
+        flex-direction: row-reverse;
+      }
+
+      .history-img{
+        flex: 1;
+        height: 100%;
+      }
+
+      .history-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .history-img:last-child{
+        height: 90%;
+      }
+
+      .stats-lay{
+        background-color: var(--cb-5);
+      }
+
+      .stats{
+        padding: 59px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 59px;
+      }
+
+      .stats h2{
+        margin: 0 auto;
+        text-align: center;
+        line-height: normal;
+        border-left: 4px solid #fff;
+        padding-left: 5px;
+        font-weight: bold;
+        font-size: clamp(30px, 4vw, 40px);
+        color: #fff;
+      }
+
+      .stats-box{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 27px;
+      }
+
+      .stats-card{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 11px;
+      }
+
+      .stats-card svg{
+        width: 58px;
+        height: 58px;
+        fill: #fff;
+      }
+
+      .stats-card h5{
+        font-weight: bold;
+        color: #fff;
+        font-size: clamp(30px, 4vw, 40px);
+      }
+
+      .stats-card h1{
+        font-weight: normal;
+        color: #fff;
+        font-size: clamp(16px, 4vw, 18px);
+      }
+
+      .feedback{
+        padding: 59px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 59px;
+      }
+
+      .feedback h2{
+        margin: 0 auto;
+        line-height: normal;
+        border-left: 4px solid var(--cb-5);
+        padding-left: 5px;
+        font-weight: bold;
+        font-size: clamp(30px, 4vw, 40px);
+        color: #060606;
+      }
+
+      .feedback-container {
+        border: 1px solid #060606;
+        direction: initial;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .feedback-slider {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        width: 100%;
+      }
+
+      .feedback-card {
+        min-width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        padding: 27px;
+      }
+
+      .feedback-card img {
+        width: 155px;
+        height: 155px;
+        object-fit: cover;
+      }
+
+      .feedback-card-box{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 11px;
+      }
+
+      .feedback-card-box h5 {
+        display: flex;
+        flex-direction: row;
+        gap: 9px;
+        align-items: center;
+      }
+
+      .feedback-card-box h5 span{
+        color: #060606;
+        font-size: clamp(18px, 4vw, 22px);
+      }
+
+      .feedback-card-box h5 hr{
+        border: none;
+        border-radius: 27px;
+        background-color: var(--cb-5);
+        height: 6px;
+        width: 27px;
+      }
+
+      .feedback-card-box p {
+        opacity: 0.8;
+        font-size: clamp(16px, 4vw, 18px);
+        color: #060606;
+        padding: 0;
+      }
+
+      .contacts-box{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        padding-top: 59px;
+      }
+
+      .maps{
+        flex: 1;
+      }
+
+      .maps iframe{
+        height: 100%;
+      }
+
+      .fields-form-lay{
+        flex: 1;
+        background-color: var(--cb-5);
+        padding: 27px;
+      }
+
+      .fields-form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .fields-title{
+        direction: initial;
+        margin-bottom: 42px;
+        line-height: normal;
+        border-left: 4px solid #fff;
+        padding-left: 5px;
+        font-weight: bold;
+        font-size: clamp(30px, 4vw, 40px);
+        color: #fff;
+      }
+
+      .input-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+      }
+
+      .input-container label{
+        color: #fff;
+      }
+
+      .input-container .input-control_column__control, .input-container .textarea-control_column__control, .form button {
+        outline: none;
+        margin: 9px 0;
+      }
+
+      .input-container .input-control_column__control {
+        border: none;
+        color: #060606;
+        background-color: #fff;
+        padding: 15px;
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+      .input-container .textarea-control_column__control {
+        border: none;
+        color: #060606;
+        background-color: #fff;
+        padding: 15px;
+        font-size: 14px;
+        line-height: 20px;
+        resize: vertical;
+        min-height: 42px;
+        max-height: 141px;
+      }
+
+      .input-container .input-control_column__control::placeholder, .input-container .textarea-control_column__control::placeholder{
+        color: #060606;
+      }
+
+      .check{
+        transition: 0.3s ease;
+        color: #fff;
+      }
+
+      .check:hover{
+        opacity: 0.5;
+      }
+
+      .form-check {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        justify-content: flex-start;
+        padding: 15px 0;
+      }
+
+      .form-check .form-check-input{
+        margin: 0;
+      }
+
+      .fields-form .land-button{
+        border: 1px solid var(--cb-1) !important;
+        background-color: var(--cb-1) !important;
+        color: #fff !important;
+      }
+
+      .ui-checkbox {
+        --primary-color: #1677ff;
+        --secondary-color: #fff;
+        --primary-hover-color: #4096ff;
+        --checkbox-diameter: 20px;
+        --checkbox-border-radius: 5px;
+        --checkbox-border-color: #d9d9d9;
+        --checkbox-border-width: 1px;
+        --checkbox-border-style: solid;
+        --checkmark-size: 1.2;
+      }
+
+      .ui-checkbox,
+      .ui-checkbox *,
+      .ui-checkbox *::before,
+      .ui-checkbox *::after {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      .ui-checkbox {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: var(--checkbox-diameter);
+        height: var(--checkbox-diameter);
+        border-radius: var(--checkbox-border-radius);
+        background: var(--secondary-color);
+        border: var(--checkbox-border-width) var(--checkbox-border-style) var(--checkbox-border-color);
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        cursor: pointer;
+        position: relative;
+      }
+
+      .ui-checkbox::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        -webkit-box-shadow: 0 0 0 calc(var(--checkbox-diameter) / 2.5) var(--primary-color);
+        box-shadow: 0 0 0 calc(var(--checkbox-diameter) / 2.5) var(--primary-color);
+        border-radius: inherit;
+        opacity: 0;
+        -webkit-transition: all 0.5s cubic-bezier(0.12, 0.4, 0.29, 1.46);
+        -o-transition: all 0.5s cubic-bezier(0.12, 0.4, 0.29, 1.46);
+        transition: all 0.5s cubic-bezier(0.12, 0.4, 0.29, 1.46);
+      }
+
+      .ui-checkbox::before {
+        top: 40%;
+        left: 50%;
+        content: "";
+        position: absolute;
+        width: 4px;
+        height: 7px;
+        border-right: 2px solid var(--secondary-color);
+        border-bottom: 2px solid var(--secondary-color);
+        -webkit-transform: translate(-50%, -50%) rotate(45deg) scale(0);
+        -ms-transform: translate(-50%, -50%) rotate(45deg) scale(0);
+        transform: translate(-50%, -50%) rotate(45deg) scale(0);
+        opacity: 0;
+        -webkit-transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6),opacity 0.1s;
+        -o-transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6),opacity 0.1s;
+        transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6),opacity 0.1s;
+      }
+
+      .ui-checkbox:hover {
+        border-color: var(--primary-color);
+      }
+
+      .ui-checkbox:checked {
+        background: var(--primary-color);
+        border-color: transparent;
+      }
+
+      .ui-checkbox:checked::before {
+        opacity: 1;
+        -webkit-transform: translate(-50%, -50%) rotate(45deg) scale(var(--checkmark-size));
+        -ms-transform: translate(-50%, -50%) rotate(45deg) scale(var(--checkmark-size));
+        transform: translate(-50%, -50%) rotate(45deg) scale(var(--checkmark-size));
+        -webkit-transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+        -o-transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+        transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+      }
+
+      .ui-checkbox:active:not(:checked)::after {
+        -webkit-transition: none;
+        -o-transition: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        transition: none;
+        opacity: 1;
+      }
+
+      .site-footer {
+        background-color: var(--cb-5);
+        padding: 27px 0;
+      }
+
+      .footer-content {
+        display: flex;
+        flex-direction: column;
+        gap: 27px;
+      }
+
+      .footer-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        gap: 27px;
+      }
+
+      .contact-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+      }
+
+      .contact-info a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 11px;
+        transition: 0.3s ease;
+      }
+
+      .contact-info a h5{
+        word-break: break-all;
+        flex: 1;
+        font-weight: normal;
+        color: #fff;
+        font-size: clamp(16px, 4vw, 18px);
+      }
+
+      .contact-info a svg{
+        fill: #fff;
+        width: 20px;
+        height: 20px;
+      }
+
+      .contact-info a:hover {
+        opacity: 0.5;
+      }
+
+      .contact-info ;
+        color: #fff;
+        opacity: 0.8;
+      }
+
+      .contact-info .contact-info__id::before {
+        content: "";
+        flex: 0 0 20px;
+        width: 20px;
+      }
+
+      .contact-info .contact-info__id span {
+        flex: 1;
+        font-size: clamp(14px, 3.6vw, 16px);
+        line-height: 1.5;
+        word-break: break-word;
+      }
+
+      .policy-links {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+      }
+
+      .policy-links a {
+        transition: 0.3s ease;
+        color: #fff;
+        font-size: clamp(16px, 4vw, 18px);
+      }
+
+      .policy-links a:hover {
+        opacity: 0.5;
+      }
+
+      .footer-content p {
+        border-top: 0.1px solid #fff;
+        padding: 0;
+        padding-top: 27px;
+        text-align: center;
+        color: #fff;
+        font-size: clamp(16px, 4vw, 18px);
+      }
+
+      .flex-col{
+        display: flex;
+        flex-direction: column-reverse;
+      }
+
+      @media (max-width: 1199px) {
+        .header-background::before{
+          width: 60%;
+        }
+      }
+
+      @media (max-width: 991px) {
+        .header-background::before{
+          display: none;
+        }
+
+        .header-background{
+          background-color: #e9eefc;
+        }
+
+        .header-content{
+          width: 100%;
+        }
+
+        .nav-toggle span{
+          background-color: var(--cb-4);
+        }
+
+        .service-box{
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .our-pricing{
+          grid-template-columns: repeat(1, 1fr);
+        }
+
+        .stats-box{
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 767px) {
+        .service-box{
+          grid-template-columns: repeat(1, 1fr);
+        }
+
+        .about{
+          flex-direction: column-reverse;
+        }
+
+        .about-content{
+          padding: 0;
+        }
+
+        .about-img img{
+          max-height: 50vh;
+        }
+
+        .article-section{
+          flex-direction: column;
+        }
+
+        .article-image img{
+          position: relative;
+          top: 0;
+        }
+
+        .our-history{
+          flex-direction: column-reverse;
+        }
+
+        .history-content{
+          padding: 0;
+        }
+
+        .history-img:last-child{
+          display: none;
+        }
+
+        .history-img img{
+          max-height: 50vh;
+        }
+
+        .contacts-box{
+          flex-direction: column-reverse;
+        }
+
+        .fields-form-lay{
+          padding: 59px 0;
+        }
+
+        .maps iframe{
+          height: revert-layer;
+        }
+
+        .feedback-card-box h5 hr{
+          display: none;
+        }
+
+        .feedback-card{
+          flex-direction: column;
+        }
+
+        .feedback-card img{
+          width: 100%;
+          height: 219px;
+        }
+
+      }
+
+      @media (max-width: 576px){
+        .container-comments{
+          margin: 0;
+        }
+        .stats-box{
+          grid-template-columns: repeat(1, 1fr);
+        }
+
+        .footer-header{
+          align-items: stretch;
+          flex-direction: column-reverse;
+        }
+
+        .feedback-card{
+          padding: 0;
+        }
+
+        .feedback-container{
+          border: none;
+        }
+      }
+
+      @media (max-width: 400px){
+        .container-comments{
+          margin: 0;
+        }
+      }
+    
+.company-id{display:inline-block;margin-top:.7em;font-size:.82em;opacity:.72;letter-spacing:.04em;line-height:1.5;text-decoration:none;cursor:default;pointer-events:none;flex-shrink:0;max-width:100%;}.company-id-wrap{flex-shrink:0;max-width:100%;}
+</style>
+
+    
+  </head>
+  <body>
+    
+    <div class="header-background accountvw--list">
+      <header class="header">
+        <a class="logo-header" href="./">
+          <div class="logoImg-header"><img src="icon.png" alt="" /></div>
+          <div class="logoTitle-header"><h2>Strivixpexi</h2></div>
+        </a>
+        <div class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="nav-panel">
+          <nav>
+            <ul>
+              <li><a class="nav-link" href="./">Home</a></li>
+              <li><a class="nav-link" href="./#aboutus">About us</a></li>
+              <li><a class="nav-link" href="./#serv">Our Services</a></li>
+              
+              <li><a class="nav-link" href="./#comm">Comments</a></li>
+              
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="container">
+        <div class="header-content">
+          <h1>Elevate your everyday wardrobe effortlessly</h1>
+          <p>We are attentive, competent, stable...</p>
+           
+          <a href="./#form-land" class="land-button">Free consultation</a>
+          
+        </div>
+      </div>
+    </div>
+    <script>
+      let navToggle = document.querySelector('.nav-toggle');
+      let navPanel = document.querySelector('.nav-panel');
+      let navLinks = document.querySelectorAll('.nav-link');
+      let body = document.body;
+
+      function closeNavPanel() {
+        navToggle.classList.remove('active');
+        navPanel.classList.remove('active');
+        body.style.overflow = 'auto';
+      }
+
+      navToggle.addEventListener('click', function () {
+        let isActive = navPanel.classList.toggle('active');
+        navToggle.classList.toggle('active', isActive);
+        body.style.overflow = isActive ? 'hidden' : 'auto';
+      });
+
+      navLinks.forEach(function (link) {
+        link.addEventListener('click', closeNavPanel);
+      });
+    </script>
+
+    
+    <div class="flex-col">
+      <div class="container">
+        <div class="about wrapperjk-overlay" id="aboutus">
+          <div class="about-img">
+            <img src="uploads/09-2026/wardrobe-consultation-session.webp" alt="" />
+          </div>
+          <div class="about-content">
+            <h2>About us</h2>
+            <p>Strivixpexi redefines personal styling by turning cluttered closets into curated collections. Founded on the belief that clothing should feel like a natural extension of your personality, we help clients navigate trends without losing their authentic voice. Our stylists work closely with you to eliminate guesswork, streamline shopping trips, and build a versatile wardrobe tailored specifically to your lifestyle and daily routine.</p>
+             
+            <a href="./#form-land" class="land-button">Free consultation</a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="service" id="serv">
+          <div class="service-title">
+            <h2>Our Services</h2>
+            <p>Tailored Styling Services</p>
+          </div>
+          <div class="service-box">
+            <div class="service-card">
+              <img src="uploads/09-2026/color-palette-matching.webp" alt="" />
+              <h5>Comprehensive personal wardrobe audit and closet organization</h5>
+            </div>
+            <div class="service-card">
+              <img src="uploads/09-2026/boutique-shopping-assistance.webp" alt="" />
+              <h5>Guided one-on-one shopping sessions at local boutiques</h5>
+            </div>
+            <div class="service-card">
+              <img src="uploads/09-2026/accessories-display-arrangement.webp" alt="" />
+              <h5>Tailored seasonal capsule wardrobe creation</h5>
+            </div>
+            <div class="service-card">
+              <img src="uploads/09-2026/fitting-room-session.webp" alt="" />
+              <h5>Special event styling and outfit coordination</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex-col">
+      
+      <div class="container">
+        <div class="article-content">
+          <h1>Discover Your Personal Style with Professional Shopper Guidance</h1>
+          <div class="article-section">
+            <div class="article-image">
+              <img src="product-images/personal-styling-main-scene.webp" alt="A personal stylist working with a client on clothing selection" />
+            </div>
+            <div class="article-box">
+              <div class="article-text"><p>Choosing what to wear every morning should feel empowering rather than exhausting. Many people look at overflowing wardrobes and still feel like they have nothing suitable for an important meeting, a casual weekend brunch, or a formal evening gathering. The issue rarely stems from a lack of clothes. Instead, the friction comes from an absence of cohesion, fit, and intentional planning.</p><p>Professional styling bridges the gap between fleeting fashion trends and practical, everyday comfort. Working with an experienced <strong>stylist-shopper</strong> brings clarity to your closet and confidence to your image.</p><h2>The Anatomy of a Functional Wardrobe</h2><p>A well-curated closet operates like a finely tuned machine where every piece serves a distinct purpose. When garments lack versatility, outfits feel disconnected and difficult to assemble. Building a cohesive collection requires stepping back to evaluate proportions, fabrics, and color palettes that complement your natural features.</p><p>Professionals examine how items interact with one another across different seasons and occasions. Instead of chasing micro-trends that disappear within months, focus shifts toward timeless silhouettes and quality textiles that withstand daily wear. By understanding your body architecture and lifestyle demands, styling transforms raw clothing items into a cohesive visual language.</p><h2>Understanding Your True Personal Silhouette</h2><p>Garments look entirely different on a hanger than they do in motion. Standard sizing charts often ignore the unique variations of human anatomy, leaving garments sitting awkwardly on shoulders, waists, or hips. A professional stylist identifies the exact cuts, rises, and necklines that flatter your build, ensuring maximum comfort alongside striking visual appeal.</p><p>Tailoring plays a crucial role in achieving an immaculate appearance. Even affordable clothing looks expensive and bespoke when adjusted correctly to your measurements. Embracing alterations changes how garments drape across the body, eliminating bunching, pulling, and other common fit issues.</p><h2>The Core Benefits of Professional Styling</h2><p>Collaborating with an expert shopper offers several distinct advantages for anyone looking to overhaul their image without unnecessary stress.</p><ul><li>Eliminates impulse purchases that sit unworn with price tags attached.</li><li>Saves valuable time during hectic weekly shopping excursions.</li><li>Maximizes existing garments through creative outfit combinations.</li><li>Introduces fresh color palettes suited to your skin undertones.</li><li>Reduces decision fatigue every single morning.</li><li>Connects you with durable, high-quality independent clothing makers.</li></ul><h2>Navigating Shopping Trips with Purpose</h2><p>Retail environments are deliberately designed to encourage emotional spending through bright lighting, aggressive discounting, and overwhelming displays. Walking into a clothing store without a clear plan usually results in buying items that do not match anything else you own. A professional shopper acts as an objective filter, steering you away from regrettable purchases and keeping the focus squarely on your wardrobe goals.</p><p>Shopping sessions become efficient and targeted. You visit boutiques and department stores knowing exactly which racks deserve your attention, trying on curated pieces that fulfill specific gaps in your daily rotation.</p><h2>Maintaining Your Curated Image Long Term</h2><p>Maintaining a functional wardrobe requires periodic reviews as seasons shift and personal routines evolve. Rotate heavier woolen coats out when spring arrives, and introduce breathable linens and lighter layering pieces. Keep your closet organized by grouping garments logically so you can assess what needs replacing before upcoming events.</p><p>True style is not about wearing the loudest outfit in the room. It is about wearing clothes that fit impeccably, feel comfortable against the skin, and communicate who you are without requiring a single spoken word.</p></div>
+               
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex-col">
+      
+      <div class="container">
+        <div class="our-history">
+          <div class="history-content">
+            <h2>Our Styling Journey</h2>
+            <p>Started as an independent personal styling blog offering local fashion advice in 2017</p>
+            <p>Expanded into full-service wardrobe consulting and partnered with boutique clothing brands nationwide in 2021</p>
+             
+            <a href="./#form-land" class="land-button">Free consultation</a>
+            
+          </div>
+          <div class="history-img-box">
+            <div class="history-img"><img src="uploads/09-2026/fitting-room-session.webp" alt="" /></div>
+            <div class="history-img"><img src="uploads/09-2026/wardrobe-organization-service.webp" alt="" /></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="stats-lay">
+        <div class="container">
+          <div class="stats">
+            <h2>Our Impact in Numbers</h2>
+            <div class="stats-box">
+              <div class="stats-card">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-journal-bookmark-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M6 1h6v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8z"
+                  />
+                  <path
+                    d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"
+                  />
+                  <path
+                    d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"
+                  />
+                </svg>
+                <h5>32178+</h5>
+                <h1>Over 500 closets transformed</h1>
+              </div>
+              <div class="stats-card">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-box-seam-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.01-.003.268-.108a.75.75 0 0 1 .558 0l.269.108.01.003zM10.404 2 4.25 4.461 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339L8 5.961 5.596 5l6.154-2.461z"
+                  />
+                </svg>
+                <h5>52785+</h5>
+                <h1>Seven years guiding clients</h1>
+              </div>
+              <div class="stats-card">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-fan"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M10 3c0 1.313-.304 2.508-.8 3.4a2 2 0 0 0-1.484-.38c-.28-.982-.91-2.04-1.838-2.969a8 8 0 0 0-.491-.454A6 6 0 0 1 8 2c.691 0 1.355.117 1.973.332Q10 2.661 10 3m0 5q0 .11-.012.217c1.018-.019 2.2-.353 3.331-1.006a8 8 0 0 0 .57-.361 6 6 0 0 0-2.53-3.823 9 9 0 0 1-.145.64c-.34 1.269-.944 2.346-1.656 3.079.277.343.442.78.442 1.254m-.137.728a2 2 0 0 1-1.07 1.109c.525.87 1.405 1.725 2.535 2.377q.3.174.605.317a6 6 0 0 0 2.053-4.111q-.311.11-.641.199c-1.264.339-2.493.356-3.482.11ZM8 10c-.45 0-.866-.149-1.2-.4-.494.89-.796 2.082-.796 3.391q0 .346.027.678A6 6 0 0 0 8 14c.94 0 1.83-.216 2.623-.602a8 8 0 0 1-.497-.458c-.925-.926-1.555-1.981-1.836-2.96Q8.149 10 8 10M6 8q0-.12.014-.239c-1.02.017-2.205.351-3.34 1.007a8 8 0 0 0-.568.359 6 6 0 0 0 2.525 3.839 8 8 0 0 1 .148-.653c.34-1.267.94-2.342 1.65-3.075A2 2 0 0 1 6 8m-3.347-.632c1.267-.34 2.498-.355 3.488-.107.196-.494.583-.89 1.07-1.1-.524-.874-1.406-1.733-2.541-2.388a8 8 0 0 0-.594-.312 6 6 0 0 0-2.06 4.106q.309-.11.637-.199M8 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
+                  />
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                </svg>
+                <h5>56936+</h5>
+                <h1>Eighty partner clothing brands</h1>
+              </div>
+              <div class="stats-card">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-terminal-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9.5 5.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1m-6.354-.354a.5.5 0 1 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2a.5.5 0 1 0-.708.708L4.793 6.5z"
+                  />
+                </svg>
+                <h5>36878+</h5>
+                <h1>Ninety-eight percent satisfaction rate</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="container  container-comments">
+        <div class="feedback" id="comm">
+          <h2>Comments</h2>
+          <div class="feedback-container">
+            <div class="feedback-slider">
+              <div class="feedback-card">
+                <img src="uploads/09-2026/female-customer-avatar.webp" alt="" />
+                <div class="feedback-card-box">
+                  <h5>
+                    <span>Claire Holloway</span>
+                    <hr />
+                  </h5>
+                  <p>Your stylistic advice helped me not only to update my wardrobe, but also taught me how to combine things correctly. Now I feel much more confident.</p>
+                </div>
+              </div>
+              <div class="feedback-card">
+                <img src="uploads/09-2026/male-customer-avatar.webp" alt="" />
+                <div class="feedback-card-box">
+                  <h5>
+                    <span>Marcus Vance</span>
+                    <hr />
+                  </h5>
+                  <p>Your organization of the fashion show was a real feast for the eyes. Gorgeous outfits, professional models and perfect organization made this event unforgettable.</p>
+                </div>
+              </div>
+              <div class="feedback-card">
+                <img src="uploads/09-2026/female-customer-avatar.webp" alt="" />
+                <div class="feedback-card-box">
+                  <h5>
+                    <span>Sophia Miller</span>
+                    <hr />
+                  </h5>
+                  <p>For the first time, I turned to the company for sewing an evening dress to order. The result exceeded all expectations! Perfect fit quality super, thanks for your skill.</p>
+                </div>
+              </div>
+              <div class="feedback-card">
+                <img src="uploads/09-2026/male-customer-avatar.webp" alt="" />
+                <div class="feedback-card-box">
+                  <h5>
+                    <span>Ethan Brooks</span>
+                    <hr />
+                  </h5>
+                  <p>Thank you for the stylistic consultation, which completely changed my perception of style. You've helped me find what I've been looking for.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="contacts-box">
+       
+      
+      
+      <div class="fields-form-lay">
+        <div class="container">
+          <form class="fields-form" id="form-land" action="gratitude.php" method="post">
+            <h3 class="fields-title">Order Form</h3>
+            <div class="input-container"><input class="input-control_column__control" type="text" name="name_finance-info" placeholder="Enter your name" required><input name="email_finance-info" class="input-control_column__control" type="email" placeholder="Email Address" required></div>
+            <div class="form-check">
+              <input class="form-check-input ui-checkbox" type="checkbox" id="checkbox" required />
+              <label class="form-check-label" for="checkbox"
+                >I accept
+                <a href="Privacy.html" class="check">Privacy policy</a>
+              </label>
+            </div>
+            <button class="land-button">Free consultation</button>
+          </form>
+        </div>
+      </div>
+      
+    </div>
+    <div class="container"></div>
+
+    
+    <script>
+      const feedbackSlider = document.querySelector('.feedback-slider');
+      const feedbackCards = document.querySelectorAll('.feedback-card');
+      let feedbackIndex = 0;
+      const totalFeedback = feedbackCards.length;
+
+      function showNextFeedback() {
+        feedbackIndex = (feedbackIndex + 1) % totalFeedback;
+        const offset = feedbackIndex * 100;
+        feedbackSlider.style.transform = `translateX(-${offset}%)`;
+      }
+
+      setInterval(showNextFeedback, 5000);
+    </script>
+     
+    
+    
+    <div class="site-footer checkout__overlayeu">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-header">
+            <div class="policy-links">
+              <a href="Privacy.html">Privacy policy</a>
+              <a href="terms-of-service.html">Terms & Conditions</a>
+              <a href="legal-disclaimer.html">Disclaimer</a>
+                
+            </div>
+            
+          </div>
+          <p>&#169; 2026 Strivixpexi</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const contactInfo = document.querySelector(".contact-info");
+        const policyLinks = document.querySelector(".policy-links");
+        
+        if (!contactInfo && policyLinks) {
+            policyLinks.style.display = "flex";
+            policyLinks.style.flexDirection = "row";
+            policyLinks.style.flexWrap = "wrap";
+        }
+    });
+    </script>
+
+     
+    
+    
+  </body>
+</html>
+
